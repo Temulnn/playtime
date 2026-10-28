@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Black+Ops+One&family=Gravitas+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      #full {
+        height: 2670px;
+        width: 1120px;
+        justify-content: center;
+        background-color: #0f0f1b;
+      }
+      #head {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: white 1px solid;
+      }
+      #head-box {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #head-box-text {
+        height: 50px;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #body1 {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 80px;
+      }
+      span {
+        color: white;
+      }
+      #head2 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+      }
+      #body2 {
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+      #body2-nav {
+        height: 100%;
+        width: 30%;
+      }
+      #head3 {
+        height: 80px;
+        width: 100%;
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-around;
+      }
+      #head3-nav {
+        width: 29%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        background-color: #1f1e2b;
+      }
+      #head4 {
+        height: 80px;
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: white solid 1px;
+      }
+      #days {
+        height: 40px;
+        width: 70px;
+        border: rgb(75, 29, 93) solid 1px;
+        border-radius: 30%;
+        transition: 0.3s;
+      }
+      #body3 {
+        height: 400px;
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      #body3-nav {
+        height: 100px;
+        width: 95%;
+        background-color: #1f1e2b;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #head5 {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: white solid 1px;
+        margin-bottom: 50px;
+      }
+      #body4 {
+        height: 350px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+      }
+      #body4-nav {
+        height: 80px;
+        width: 200px;
+        background-color: #1f1e2b;
+        border-radius: 30px;
+      }
+      #body4-nav2 {
+        height: 70px;
+        width: 400px;
+        background-color: #1f1e2b;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        gap: 8px;
+      }
+      #leg {
+        width: 100%;
+        height: 70px;
+        margin-top: 170px;
+        display: flex;
+        justify-content: space-between;
+        border-top: white 1px solid;
+      }
+      #line-text {
+        color: gray;
+        transition: 0.3s;
+      }
+      #playtime1 {
+        font-size: x-large;
+        color: whitesmoke;
+        font-weight: bold;
+        transition: 0.3s;
+        font-family: "Black Ops One", system-ui;
+      }
+      #join-the-beat {
+        color: #002e6a;
+        width: 65%;
+        height: 60px;
+        background-color: #adc6ff;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+      }
+      #get-ticket {
+        height: 30px;
+        width: 100px;
+        border-radius: 30px;
+        background-color: #cbbbfe;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #69289c;
+        transition: 0.3s;
+      }
+      #get-ticket:hover {
+        border: #002e6a 1px solid;
+        background-color: #c4a4e4;
+        color: #69289c;
+        box-shadow: 0 0 40px rgb(156, 51, 255);
+        font-size: large;
+        transition: 0.3s;
+      }
+      #line-text:hover {
+        color: #69289c;
+        font-size: larger;
+        border-bottom: #69289c 0.5px solid;
+        transition: 0.3s;
+      }
+      #playtime1:hover {
+        font-size: xx-large;
+        transition: 0.3s;
+      }
+      #join-the-beat:hover {
+        border: #a2b8ee 1px solid;
+        background-color: #84a1f5;
+        width: 68%;
+        height: 65px;
+        transition: 0.3s;
+        box-shadow: 0px 0px 15px #a2b8ee;
+      }
+      #days:hover {
+        background-color: #69289c;
+        color: white;
+        box-shadow: 0 0 40px rgb(156, 51, 255);
+        font-size: larger;
+        transition: 0.3s;
+      }
+      #main-stage {
+        height: 30px;
+        width: 100px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #383846;
+        transition: 0.3s;
+      }
+      #main-stage:hover {
+        font-size: larger;
+        box-shadow: 0 0 40px rgb(247, 246, 248);
+        transition: 0.3s;
+        height: 35px;
+        width: 110px;
+      }
+      #festival1 {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 1000;
+      }
+      #font1 {
+        font-family: "Bebas Neue", sans-serif;
+      }
+    </style>
+  </head>
+  <body style="display: flex; justify-content: center; background-color: black">
+    <div id="full">
+      <div id="head">
+        <div id="head-box">
+          <span id="playtime1">playtime</span>
+        </div>
+        <div id="head-box">
+          <div id="head-box-text">
+            <span id="line-text">Lineup</span>
+          </div>
+          <div id="head-box-text">
+            <span id="line-text">Schedule</span>
+          </div>
+          <div id="head-box-text">
+            <span id="line-text">Tickets</span>
+          </div>
+        </div>
+        <div id="head-box">
+          <div
+            style="width: 100px; height: 27px; color: #46156b"
+            id="get-ticket"
+          >
+            Get Tickets
+          </div>
+        </div>
+      </div>
+      <div id="body1">
+        <div
+          style="
+            height: 100%;
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 40px;
+          "
+        >
+          <div style="width: 350px; height: 20%">
+            <h1
+              id="festival1"
+              style="
+                background: -webkit-linear-gradient(#dcb7ff, #b1c4fe);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              PLAYTIME FESTIVAL
+            </h1>
+          </div>
+          <div style="height: 7%; width: 100%; color: #cbbbfe">
+            <img src="Icon (10).svg" alt="" />
+            <span style="color: #84a1f5">JULY 15-17, 2024 - </span>
+            <img src="Icon (9).svg" alt="" />
+            <span style="color: #84a1f5">NEON CITY PARK</span>
+          </div>
+          <div style="width: 100%; height: 20%">
+            <span style="color: rgb(184, 184, 184)">
+              The ultimate summer music experience for the next generation.
+              Three days of non-stop beats, vibrant lights, and unforgettable.
+            </span>
+          </div>
+          <div style="width: 70%; height: 8%">
+            <div id="join-the-beat">
+              <h1 style="font-size: x-large">Join the beat</h1>
+            </div>
+          </div>
+        </div>
+        <div
+          style="height: 100%; width: 50%; display: flex; margin-right: 30px"
+        >
+          <div
+            style="
+              background-image: url(&quot;festival.jpeg&quot;);
+              width: 100%;
+              border-radius: 35px;
+            "
+          >
+            <div
+              style="
+                height: 32px;
+                width: 110px;
+                border: #be7d9a 0.5px solid;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                margin-left: 420px;
+                margin-top: 25px;
+              "
+            >
+              <img
+                style="height: 7px; width: 7px"
+                src="Background.svg"
+                alt=""
+              />
+              <span style="color: #be7d9a; font-size: small">LIVE MUSIC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="head2">
+        <div
+          style="
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <h1 id="festival1" style="color: #ddb7ff">MEET THE HEADLINERS</h1>
+        </div>
+        <div
+          style="
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <span>The biggest acts lighting up the main stage this summer.</span>
+        </div>
+      </div>
+      <div id="body2">
+        <div id="body2-nav">
+          <span
+            style="
+              background-image: url(&quot;singer2.jpeg&quot;);
+              box-shadow: inset 0px 0px 200px rgba(14, 14, 17, 0.761);
+              width: 100%;
+              height: 100%;
+              border-radius: 30px;
+              display: flex;
+              flex-direction: column;
+              justify-content: end;
+            "
+          >
+            <div
+              style="
+                height: 30px;
+                width: 80px;
+                border-radius: 30px;
+                border: #b492d3 1px solid;
+              "
+            >
+              <span
+                style="
+                  color: #b492d3;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding-top: 4px;
+                "
+                >Pop/Synth</span
+              >
+            </div>
+            <div style="height: 50px; width: 150px">
+              <h1 style="color: white">Nova Sky</h1>
+            </div>
+            <div style="height: 40px; width: 90px; color: #a2b8ee">
+              VIEW BIO >
+            </div>
+          </span>
+        </div>
+        <div id="body2-nav">
+          <span
+            style="
+              background-image: url(&quot;dj.jpeg&quot;);
+              box-shadow: inset 0px 0px 200px rgba(14, 14, 17, 0.761);
+              width: 100%;
+              height: 100%;
+              border-radius: 30px;
+              display: flex;
+              flex-direction: column;
+              justify-content: end;
+            "
+          >
+            <div
+              style="
+                height: 30px;
+                width: 100px;
+                border-radius: 30px;
+                border: #a2b8ee 1px solid;
+              "
+            >
+              <span
+                style="
+                  color: #a2b8ee;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding-top: 4px;
+                "
+                >EDM/House</span
+              >
+            </div>
+            <div style="height: 50px; width: 150px">
+              <h1 style="color: white">DJ Pulse</h1>
+            </div>
+            <div style="height: 40px; width: 90px; color: #a2b8ee">
+              VIEW BIO >
+            </div>
+          </span>
+        </div>
+        <div id="body2-nav">
+          <span
+            style="
+              background-image: url(&quot;guitarist.jpeg&quot;);
+              box-shadow: inset 0px 0px 200px rgba(14, 14, 17, 0.761);
+              width: 100%;
+              height: 100%;
+              border-radius: 30px;
+              display: flex;
+              flex-direction: column;
+              justify-content: end;
+            "
+          >
+            <div
+              style="
+                height: 30px;
+                width: 80px;
+                border-radius: 30px;
+                border: #be7d9a 1px solid;
+              "
+            >
+              <span
+                style="
+                  color: #be7d9a;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding-top: 4px;
+                "
+                >Indie Rock</span
+              >
+            </div>
+            <div style="height: 50px; width: 180px">
+              <h1 style="color: white">The Echoes</h1>
+            </div>
+            <div style="height: 40px; width: 90px; color: #a2b8ee">
+              VIEW BIO >
+            </div>
+          </span>
+        </div>
+      </div>
+      <div id="head3">
+        <div id="head3-nav">
+          <div
+            style="
+              height: 60%;
+              width: 16%;
+              border-radius: 80%;
+              background-color: #2d2f40;
+              margin-left: 10px;
+              margin-top: 4px;
+            "
+          >
+            <div style="padding-left: 17px; padding-top: 15px">
+              <img src="Icon (13).svg" alt="" />
+            </div>
+          </div>
+          <div
+            style="
+              height: 50px;
+              width: 150px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <p style="font-size: small; color: darkgrey">DATE</p>
+            <span style="font-size: larger">July 15-17</span>
+          </div>
+        </div>
+        <div id="head3-nav">
+          <div
+            style="
+              height: 60%;
+              width: 16%;
+              border-radius: 80%;
+              background-color: #322d40;
+              margin-left: 10px;
+              margin-top: 4px;
+            "
+          >
+            <div style="padding-left: 17px; padding-top: 15px">
+              <img src="Icon (11).svg" alt="" />
+            </div>
+          </div>
+          <div
+            style="
+              height: 50px;
+              width: 150px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <p style="font-size: small; color: darkgrey">LOCATION</p>
+            <span style="font-size: larger">Neon City</span>
+          </div>
+        </div>
+        <div id="head3-nav">
+          <div
+            style="
+              height: 60%;
+              width: 16%;
+              border-radius: 80%;
+              background-color: #352d3b;
+              margin-left: 10px;
+              margin-top: 4px;
+            "
+          >
+            <div style="padding-left: 15px; padding-top: 15px">
+              <img src="Icon (12).svg" alt="" />
+            </div>
+          </div>
+          <div
+            style="
+              height: 50px;
+              width: 150px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <p style="font-size: small; color: darkgrey">PRICE</p>
+            <span style="font-size: larger">$99(3-Day Pass)</span>
+          </div>
+        </div>
+      </div>
+      <div id="head4">
+        <div
+          id="festival1"
+          style="height: 80px; width: 500px; margin-left: 30px"
+        >
+          <span style="color: #adc6ff; font-size: xx-large"
+            >FESTIVAL SCHEDULE</span
+          >
+        </div>
+        <div
+          style="
+            height: 80px;
+            width: 250px;
+            display: flex;
+            justify-content: space-around;
+            margin-right: 30px;
+          "
+        >
+          <div
+            id="days"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <span>Day 1</span>
+          </div>
+          <div
+            id="days"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <span>Day 2</span>
+          </div>
+          <div
+            id="days"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <span>Day 3</span>
+          </div>
+        </div>
+      </div>
+      <div id="body3">
+        <div id="body3-nav">
+          <div
+            style="
+              height: 100%;
+              width: 15%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <span
+              id="font1"
+              style="font-size: xx-large; color: #c4a4e4; display: flex"
+              >2:00 PM</span
+            >
+          </div>
+          <div
+            style="
+              height: 100%;
+              width: 20%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <span style="font-size: xx-large">Nova Sky</span>
+            <span>
+              <img style="height: 12px; width: 9px" src="Icon (7).svg" alt="" />
+              Main Stage</span
+            >
+          </div>
+          <div
+            style="
+              height: 100%;
+              width: 15%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <div id="main-stage">
+              <span style="color: rgb(189, 189, 189)">Main Stage</span>
+            </div>
+          </div>
+        </div>
+        <div id="body3-nav">
+          <div
+            style="
+              height: 100%;
+              width: 15%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <span
+              id="font1"
+              style="font-size: xx-large; color: #ffb0cd; display: flex"
+              >5:00 PM</span
+            >
+          </div>
+          <div
+            style="
+              height: 100%;
+              width: 20%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <span style="font-size: xx-large">The Echoes</span>
+            <span>
+              <img style="height: 12px; width: 9px" src="Icon (7).svg" alt="" />
+              Groove arena</span
+            >
+          </div>
+          <div
+            style="
+              height: 100%;
+              width: 15%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <div id="main-stage">
+              <span style="color: rgb(189, 189, 189)">Main Stage</span>
+            </div>
+          </div>
+        </div>
+        <div id="body3-nav">
+          <div
+            style="
+              height: 100%;
+              width: 15%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <span
+              id="font1"
+              style="font-size: xx-large; color: #a2b8ee; display: flex"
+              >9:00 PM</span
+            >
+          </div>
+          <div
+            style="
+              height: 100%;
+              width: 20%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <span style="font-size: xx-large">DJ Pulse</span>
+            <span>
+              <img style="height: 12px; width: 9px" src="Icon (7).svg" alt="" />
+              Neon Dome</span
+            >
+          </div>
+          <div
+            style="
+              height: 100%;
+              width: 15%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <div id="main-stage">
+              <span style="color: rgb(189, 189, 189)">Main Stage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="head5">
+        <div id="festival1" style="height: 50px; width: 50%">
+          <span style="font-size: xx-large; color: #ddb7ff; padding-left: 30px"
+            >OUR SPONSORS</span
+          >
+        </div>
+        <div
+          style="
+            height: 50px;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <span id="festival1" style="font-size: xx-large; color: #adc6ff"
+            >STRATEGIC PARTNERS</span
+          >
+        </div>
+      </div>
+      <div id="body4">
+        <div
+          style="
+            height: 90%;
+            width: 47%;
+            background-color: #171723;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <div
+            style="
+              height: 45%;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: end;
+              gap: 40px;
+              margin-bottom: 20px;
+            "
+          >
+            <div id="body4-nav">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding-top: 18px;
+                  padding-bottom: 7px;
+                "
+              >
+                <img
+                  style="height: 20px; width: 25px"
+                  src="Icon (2).svg"
+                  alt=""
+                />
+              </div>
+              <span
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: small;
+                "
+                >SOUNDWAVE AUDIO</span
+              >
+            </div>
+            <div id="body4-nav">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding-top: 16px;
+                  padding-bottom: 7px;
+                "
+              >
+                <img
+                  style="height: 23px; width: 23px"
+                  src="Icon (4).svg"
+                  alt=""
+                />
+              </div>
+              <span
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: small;
+                "
+                >ECLIPSE STAGE</span
+              >
+            </div>
+          </div>
+          <div
+            style="
+              height: 45%;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              gap: 40px;
+              margin-top: 20px;
+            "
+          >
+            <div id="body4-nav">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding-top: 14px;
+                  padding-bottom: 7px;
+                "
+              >
+                <img
+                  style="height: 23px; width: 23px"
+                  src="Icon (3).svg"
+                  alt=""
+                />
+              </div>
+              <span
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: small;
+                "
+                >QUANTUM</span
+              >
+            </div>
+            <div id="body4-nav">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding-top: 14px;
+                  padding-bottom: 7px;
+                "
+              >
+                <img
+                  style="height: 23px; width: 23px"
+                  src="Icon (5).svg"
+                  alt=""
+                />
+              </div>
+              <span
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: small;
+                "
+                >HARMONY FINANCIAL</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            height: 100%;
+            width: 47%;
+            background-color: #171723;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <div id="body4-nav2">
+            <img style="height: 25px; width: 25px" src="Icon.svg" alt="" />
+            <span style="display: flex; font-size: small">
+              SONIC SYNC MEDIA
+            </span>
+          </div>
+          <div id="body4-nav2">
+            <img src="Icon (1).svg" alt="" />
+            <span style="display: flex; font-size: small">
+              NEXUS AUDIO TECH
+            </span>
+          </div>
+          <div id="body4-nav2">
+            <img src="Icon (6).svg" alt="" />
+            <span style="display: flex; font-size: small">
+              STREAMFLOW LIVE
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="leg">
+        <div
+          id="playtime1"
+          style="
+            height: 100%;
+            width: 170px;
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <span>playtime</span>
+        </div>
+        <div
+          style="
+            height: 30px;
+            width: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+          "
+        >
+          <span style="color: gray; font-size: small"
+            >2024 NEON BEAT FESTIVAL. ALL RIGHTS REVERSED.</span
+          >
+        </div>
+        <div
+          style="
+            height: 100%;
+            width: 180px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            margin-right: 5px;
+          "
+        >
+          <div style="height: 100%; width: 40">
+            <span style="color: gray; font-size: small">Privacy</span>
+          </div>
+          <div style="height: 100%; width: 40">
+            <span style="color: gray; font-size: small">Terms</span>
+          </div>
+          <div style="height: 100%; width: 40">
+            <span style="color: gray; font-size: small">Safety</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
